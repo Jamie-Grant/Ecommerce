@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="header flex flex-row">  
+        <h1 class="heading">Hiking</h1>
+        <nav class="header-nav">
+            <ul class="flex flex-row">
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="clothes.html">Clothes</a></li>
+                <li><a href="hats-accessories.html">Hats & Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="header-cart">
+            <div class="cart-quantity js-cart-quantity"></div>
+            <a href="checkout.html"><img src="images/cart_icon.webp" alt="cart icon" width="50"></a>
+        </div>
+    </div>
+    <main>
+        <div class="page-heading">Orders</div>
+        <div class="checkout-container">
+            <div class="orders-container">
+                <div class="order-item">
+                    <div class="delivery-title">
+                        <p>Delivery date: Friday, June 20th</p>
+                    </div>
+                    <div class="order-details">
+                        <div class="order-image">
+                            <img src="images/bag_2.jpg" alt="item">
+                        </div>
+                        <div class="order-details-info">
+                            <p class="item-name">Bag</p>
+                            <p class="item-price">£34.99</p>
+                            <p class="item-quantity">Quantity: 2</p>
+                        </div>
+                        <div class="order-delivery-details">
+                            <p class="order-delivery-title">
+                                Choose a delivery option:
+                            </p>
+                            <div class="delivery-options">
+                                <div class="option">
+                                    <input type="radio" id="free" name="shipping">
+                                    <label for="free">Free shipping</label>
+                                    <p class="delivery-price">FREE shipping</p>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="next" name="shipping">
+                                    <label for="next">Next day delivery</label>
+                                    <p class="delivery-price">£6.99</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="order-item">
+                    <div class="delivery-title">
+                        <p>Delivery date: Friday, June 20th</p>
+                    </div>
+                    <div class="order-details">
+                        <div class="order-image">
+                            <img src="images/bag_2.jpg" alt="item">
+                        </div>
+                        <div class="order-details-info">
+                            <p class="item-name">Bag</p>
+                            <p class="item-price">£34.99</p>
+                            <p class="item-quantity">Quantity: 2</p>
+                        </div>
+                        <div class="order-delivery-details">
+                            <p class="order-delivery-title">
+                                Choose a delivery option:
+                            </p>
+                            <div class="delivery-options">
+                                <div class="option">
+                                    <input type="radio" id="free" name="shipping">
+                                    <label for="free">Free shipping</label>
+                                    <p class="delivery-price">FREE shipping</p>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="next" name="shipping">
+                                    <label for="next">Next day delivery</label>
+                                    <p class="delivery-price">£6.99</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="payment-container">
+                <div class="payment-title"> 
+                    <p>Payment Summary</p>
+                </div>
+                <div class="payment-quantity">
+                    <p>Items: (2)</p>
+                </div>
+                <div class="payment-delivery">
+                    <p>Shipping: £6.99</p>
+                </div>
+                <div class="payment-total">
+                    <p>Payment total: £99.99</p>
+                </div>
+                <button class="place-order-button">Place your order</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

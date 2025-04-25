@@ -1,0 +1,88 @@
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+.page-heading {
+    margin-bottom: 10px;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 25px;
+}
+
+.orders-container {
+    display: grid;
+    row-gap: 25px;
+}
+
+.payment-container {
+    font-size: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(203, 203, 203);
+    padding: 10px;
+    height: 130px;
+}
+
+.order-item {
+    font-size: 10px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(203, 203, 203);
+    padding: 10px;
+}
+
+.delivery-title p {
+    margin: 0;
+}
+
+.order-details {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    column-gap: 20px;
+}
+
+.order-details-info p {
+    margin: 0;
+}
+
+.order-image img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.order-delivery-title {
+    margin: 0;
+}
+
+.delivery-price {
+    font-size: 9px;
+    color: rgb(65, 65, 65);
+    margin: 0;
+    margin-left: 23px;
+}
+
+.place-order-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 12px;
+    background-color: rgb(76, 76, 76);
+    color: rgb(223, 223, 223);
+    width: 200px;
+    height: 25px;
+}
+
+.place-order-button:hover {
+    transition: 0.25s;
+    background-color: rgb(229, 229, 229);
+    color: rgb(77, 77, 77);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
