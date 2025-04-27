@@ -2,6 +2,7 @@
 
 body {
     font-family: Sora;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -20,9 +21,11 @@ body {
     border-width: 1px;
 }
 
-.heading {
+.heading a {
     font-size: 20px;
     margin-left: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .header-nav ul {
@@ -39,9 +42,23 @@ body {
 .header-nav a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    transition: font-weight 0.25s;
 }
 
 .header-nav a:hover {
-    font-weight: bold;
-    transition: 0.25s;
+    font-weight: 600;
+}
+
+.header-cart {
+    position: relative;
+}
+
+.cart-quantity {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
 }
