@@ -31,16 +31,12 @@ main {
 
 .order-item {
     font-size: 10px;
-    height: 150px;
+    height: 130px;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     border-color: rgb(203, 203, 203);
     padding: 10px;
-}
-
-.delivery-title p {
-    margin: 0;
 }
 
 .order-details {
@@ -70,6 +66,16 @@ main {
 .remove-button {
     align-self: end;
     justify-self: end;
+}
+
+.remove-button button {
+    font-family: Sora;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 4px;
+    background-color: rgb(76, 76, 76);
+    color: rgb(223, 223, 223);
 }
 
 .place-order-button {

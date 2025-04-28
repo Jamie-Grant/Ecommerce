@@ -1,4 +1,4 @@
-import { cart } from "./cart.js";
+import { cart, updateCartQuantity } from "./cart.js";
 import { removeCartItem } from "./cart.js";
 import { items } from "../data/items.js";
 
@@ -17,9 +17,6 @@ function renderHTML() {
 
         ordersHTML += `
         <div class="order-item">
-            <div class="delivery-title">
-                <p>Delivery date: Friday, June 20th</p>
-            </div>
             <div class="order-details">
                 <div class="order-image">
                     <img src="${matchingItem.image}" alt="item">
@@ -40,6 +37,7 @@ function renderHTML() {
 }
 
 renderHTML();
+updateCartQuantity();
 
 
 document.querySelectorAll(".js-remove-item")
@@ -48,6 +46,7 @@ document.querySelectorAll(".js-remove-item")
             const currentItem = button.dataset.itemId;
             const order = button.closest(".order-item");
             removeCartItem(order, currentItem);
+            updateCartQuantity();
         });
     });
 
