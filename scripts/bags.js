@@ -34,7 +34,7 @@ function renderHTML() {
                     </select>
                 </div>
                 <div class="item-add">
-                    <button class="js-add-to-cart" data-item-name="${item.name}" data-item-price="${item.priceCents}">Add to cart</button>
+                    <button class="js-add-to-cart" data-item-id="${item.id}">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -49,12 +49,11 @@ renderHTML();
 document.querySelectorAll(".js-add-to-cart")
     .forEach((button) => {
         button.addEventListener("click", () => {
-            const itemName = button.dataset.itemName;
-            const itemPriceCents = button.dataset.itemPrice;
+            const itemId = button.dataset.itemId;
             const quantitySelector = button.closest(".item-info").querySelector(".quantity-selector");
             const selectedQuantity = Number(quantitySelector.value);
 
-            addToCart(itemName, itemPriceCents, selectedQuantity);
+            addToCart(itemId, selectedQuantity);
             updateCartQuantity();
         });
     });

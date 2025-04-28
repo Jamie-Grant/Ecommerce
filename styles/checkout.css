@@ -1,5 +1,5 @@
 main {
-    max-width: 600px;
+    max-width: 550px;
     margin: auto;
 }
 
@@ -10,7 +10,7 @@ main {
 
 .checkout-container {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 300px 1fr;
     column-gap: 25px;
 }
 
@@ -55,13 +55,10 @@ main {
 
 .order-image img {
     width: 100%;
-    max-height: 120px;
+    height: 120px;
     object-fit: cover;
 }
 
-.order-delivery-title {
-    margin: 0;
-}
 
 .delivery-price {
     font-size: 9px;
@@ -70,8 +67,12 @@ main {
     margin-left: 23px;
 }
 
+.remove-button {
+    align-self: end;
+    justify-self: end;
+}
+
 .place-order-button {
-    margin-top: 10px;
     border-radius: 10px;
     border-style: none;
     font-size: 12px;
@@ -79,11 +80,11 @@ main {
     color: rgb(223, 223, 223);
     width: 200px;
     height: 25px;
+    transition: 0.15s;
 }
 
 .place-order-button:hover {
-    transition: 0.25s;
     background-color: rgb(229, 229, 229);
     color: rgb(77, 77, 77);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 }
