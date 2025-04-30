@@ -1,10 +1,10 @@
-import { cart, updateCartQuantity } from "./cart.js";
-import { removeCartItem } from "./cart.js";
+import { cart, updateCartQuantity, removeCartItem } from "./cart.js";
 import { items } from "../data/items.js";
-
+import { renderPayment } from "./payment.js";
 
 function renderHTML() {
     let ordersHTML = "";
+
     cart.forEach((cartItem) => {
         const itemId = cartItem.itemId;
         let matchingItem;
@@ -37,6 +37,7 @@ function renderHTML() {
 }
 
 renderHTML();
+renderPayment();
 updateCartQuantity();
 
 
@@ -47,6 +48,7 @@ document.querySelectorAll(".js-remove-item")
             const order = button.closest(".order-item");
             removeCartItem(order, currentItem);
             updateCartQuantity();
+            renderPayment();
         });
     });
 
